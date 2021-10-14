@@ -1,0 +1,36 @@
+
+.main-whole{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-header{
+    padding: .25em;
+    margin: 50px 0;
+    opacity: .5;
+}
+.main-content{
+    color: #C3A72D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
+}
+.main-number{
+    padding-bottom: .25em;
+    border-bottom: .25px solid #C3A72D;
+    border-radius: 0;
+}
+.main-percent{
+    margin-top: .25em;
+}
+.main-leave{
+    margin-top: 100px;
+}
+.leave-link{
+    color: #C3A72D;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 100;
+    opacity: .5;
+}
