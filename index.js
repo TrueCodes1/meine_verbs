@@ -3,7 +3,6 @@ const app = express();
 const ejs = require('ejs');
 const admin = require('firebase-admin');
 const Math = require('mathjs');
-const path = require('path');
 
 var serviceAccount = require("./private_key.json");
 
@@ -219,16 +218,9 @@ app.post('/check_test', (req, res) => {
     res.render('results', {title: 'Results', correct: corr_ev, total: all_ev}) 
 })
 
-/*
 //404 page
 app.use((req, res) =>{
     res.status(404).render('error', {title: 'Error'})
-})
-*/
-
-app.get('/.well-known/acme-challenge/1YR8Ky3sbjjOLRquXOonAFCtoMVczjopMRFuhnWdcbE', (req, res) => {
-    const filePath = path.join(__dirname, '/.well-known/acme-challenge/1YR8Ky3sbjjOLRquXOonAFCtoMVczjopMRFuhnWdcbE');
-    res.sendFile(filePath)
 })
 
 const port = process.env.PORT || 8000;
