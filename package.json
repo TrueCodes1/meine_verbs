@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "full-update": "git add . && git commit -m 'updated' && git push origin main && git push heroku main && clear"
   },
   "keywords": [
     "sloveso",
