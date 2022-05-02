@@ -220,10 +220,12 @@ app.post('/check_test', (req, res) => {
     res.render('results', {title: 'Results', correct: corr_ev, total: all_ev}) 
 })
 
+/*
 //404 page
 app.use((req, res) =>{
     res.status(404).render('error', {title: 'Error'})
 })
+*/
 
 const port = process.env.PORT || 8000;
 
