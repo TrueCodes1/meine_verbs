@@ -227,6 +227,10 @@ app.use((req, res) =>{
 })
 */
 
+app.get('/.well-known/acme-challenge/1YR8Ky3sbjjOLRquXOonAFCtoMVczjopMRFuhnWdcbE', (req, res) => {
+    res.sendFile('./.well-known/acme-challenge/1YR8Ky3sbjjOLRquXOonAFCtoMVczjopMRFuhnWdcbE')
+})
+
 const port = process.env.PORT || 8000;
 
 app.listen(port, ()=>{
