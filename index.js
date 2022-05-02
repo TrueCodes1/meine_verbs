@@ -37,7 +37,7 @@ app.get('/', function(req, res){/*
             console.log('Data dont exist')
         }
     }).catch((error) => {
-        console.log(error)
+        console.log('EROOOOOOOOOOOOOOOOOOOOOOR: '+error)
     })
 })
 app.get('/home', function(req, res){
@@ -226,5 +226,5 @@ app.use((req, res) =>{
 })
 
 app.listen(8000, ()=>{
-    console.log('Listening on port 8000...')
+    console.log('Listening on port 8000...');
 })

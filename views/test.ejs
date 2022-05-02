@@ -13,7 +13,7 @@
         <div class="main-content">
             <div class="content-qs"> 
                     <form action="/check_test" method="POST" class="qs-form">    
-                        <div class="q-q">
+                        <div class="q-q pattern">
                             <div class="answer-input">Infinitiv</div>
                             <div class="answer-input">Präsens</div>
                             <div class="answer-input">Präteritum</div>
@@ -22,7 +22,7 @@
                             <div class="answer-input" style="opacity: .5;">Übersetzung</div>
                         </div>             
                         <% for (chosen of for_test) {  %>
-                            <div class="q-q">
+                            <div class="q-q" style="margin-top: 20px;">
                                 <div class="answer-input" style="background-color: #C3A72D; color: #1C2022;"><%= chosen['Infinitiv'] %></div>
                                 <input type="text" class="answer-input" placeholder="Präsens" name="Präsens">   
                                 <input type="text" class="answer-input" placeholder="Präteritum" name="Präteritum">   
