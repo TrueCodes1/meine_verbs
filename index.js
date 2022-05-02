@@ -3,8 +3,7 @@ const app = express();
 const ejs = require('ejs');
 const admin = require('firebase-admin');
 const Math = require('mathjs');
-
-
+const path = require('path');
 
 var serviceAccount = require("./private_key.json");
 
@@ -228,7 +227,8 @@ app.use((req, res) =>{
 */
 
 app.get('/.well-known/acme-challenge/1YR8Ky3sbjjOLRquXOonAFCtoMVczjopMRFuhnWdcbE', (req, res) => {
-    res.sendFile('./.well-known/acme-challenge/1YR8Ky3sbjjOLRquXOonAFCtoMVczjopMRFuhnWdcbE')
+    const filePath = path.join(__dirname, '/.well-known/acme-challenge/1YR8Ky3sbjjOLRquXOonAFCtoMVczjopMRFuhnWdcbE');
+    res.sendFile(filePath)
 })
 
 const port = process.env.PORT || 8000;
