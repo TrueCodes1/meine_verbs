@@ -58,6 +58,7 @@ ___
 
 ## 🚀 What drove me? 
 
+Meine Verben was idea that sparked in my mind back then when my beloved one started studying at uni and I have assumed that tool like this might come to her as a useful one. 
 
 ___
 
