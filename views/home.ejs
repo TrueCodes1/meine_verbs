@@ -8,14 +8,14 @@
     <div class="body-bg" id="body-bg" style="display: none;"></div>
     <div class="main">
         <div class="main-header">
-            Nepravidelné slovesá v nemčine
+            Irregular verbs in German
         </div>
         <div class="main-options">
             <a class="options-add" onclick="open_add()">
-                pridať sloveso +
+                add a verb +
             </a>
             <a class="options-test" onclick="open_test_options()">
-                otestuj ma
+                take a test
             </a>
         </div>
         <div class="main-list">
@@ -78,14 +78,14 @@
                 <img src="close.svg" alt="" onclick="document.getElementById('test-options-whole').style.display = 'none'; document.getElementById('body-bg').style.display = 'none'" style="cursor: pointer;">
             </div>
             
-            <p class="options-header">Ako má vyzerať Tvoj test?</p>
+            <p class="options-header">How many questions are you going to have?</p>
             <div class="num-of-q-whole">
                 <img src="/plus.svg" alt="" onclick="add_num()" style="cursor: pointer;">
                 <input type="text" class="test-options-input" id="test-options-input" value="10" name="num_of_q" onkeypress="return false">
                 <img src="/minus.svg" alt="" onclick="subtract_num()" style="cursor: pointer;">
             </div>
-            <p style="margin-top: -40px;">počet otázok</p>
-            <input type="submit" class="submit" id="test-options-submit" value="Poďme na to!">
+            <p style="margin-top: -40px;">number of questions</p>
+            <input type="submit" class="submit" id="test-options-submit" value="Let's do this!">
         </form> 
     </div> 
     <!-- The core Firebase JS SDK is always required and must be listed first -->

@@ -35,7 +35,7 @@ app.get('/', function(req, res){/*
             console.log('Data dont exist')
         }
     }).catch((error) => {
-        console.log('EROOOOOOOOOOOOOOOOOOOOOOR: '+error)
+        console.log('error: '+error)
     })
 })
 app.get('/home', function(req, res){
