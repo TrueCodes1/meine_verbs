@@ -134,6 +134,10 @@ html::-webkit-scrollbar{
         border: none;
         outline: none;
     }
+    .options-header {
+        padding: 20px;
+        text-align: center
+    }
     input, .answer-input{
         outline: none;
         border: none;

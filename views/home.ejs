@@ -51,7 +51,7 @@
             <input type="text" class="add-options-input" placeholder="Perfekt" name="perf" required>
             <input type="text" class="add-options-input" placeholder="Gebrauch" name="gebr" required>
             <input type="text" class="add-options-input" placeholder="Übersetzung" name="uber" required>
-            <input type="submit" class="add-options-input submit" value="pridať">
+            <input type="submit" class="add-options-input submit" value="Add">
         <div class="close">
             <img src="close.svg" alt="" onclick="document.getElementById('add-options').style.display = 'none', document.getElementById('body-bg').style.display = 'none'" style="cursor: pointer;">
         </div>
@@ -135,14 +135,14 @@
             if (Number(num_of_q_input.value)<num_of_verbs){
                 num_of_q_input.setAttribute('value', (Number(num_of_q_input.value)+1).toString());
             } else {
-                alert('Viac slovies zatiaľ nemáš na svojom zozname. :-)')
+                alert('This is the largest number of verbs you can choose, as there are no more of them in your list. :-)')
             }
         }
         function subtract_num() {
             if (Number(num_of_q_input.value)>5){
                 num_of_q_input.setAttribute('value', (Number(num_of_q_input.value)-1).toString());
             } else {
-                alert('Tvoj test by mal určite obsahovať aspoň 5 otázok. ;-)')
+                alert('I am sure your test should contain at least 5 questions. ;-)')
             }
         }
     </script>

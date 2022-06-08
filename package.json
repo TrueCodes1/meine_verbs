@@ -1,3 +1,4 @@
+
 {
   "name": "nepravidelne_slovesa",
   "version": "1.0.0",
@@ -5,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "git-update": "git add . && git commit -m 'updated' && git push origin main && clear",
     "git-update-force": "git add . && git commit -m 'updated' && git push -f origin main && clear",
