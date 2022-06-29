@@ -38,6 +38,7 @@ app.get('/', function(req, res){/*
         console.log('error: '+error)
     })
 })
+
 app.get('/home', function(req, res){
     db.ref('/verbs_official/').get().then((data) => {
         if (data.exists()){
